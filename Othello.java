@@ -45,6 +45,9 @@ public class Othello implements Game<State, Integer, Player>
 		for(int i=1; i<=l; i++){
 			actions.add(arr[i]);
 		}
+		if (l==0){
+			actions.add(100);
+		}
 
 		return actions;
 	}

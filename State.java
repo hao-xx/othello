@@ -82,6 +82,10 @@ public class State
 	public void set(int x, int y)
 	{
 		int x1, y1, count = 0;
+		if(x>8 || y>8){
+			pass();
+			return;
+		}
 		for (int i = 1; i <= 8; i++)
 		{
 			count = 0;
